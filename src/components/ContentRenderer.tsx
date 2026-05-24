@@ -9,7 +9,7 @@ import {
   QuoteBlock,
   ListBlock 
 } from './ContentBlockEditor';
-import { getAdsConfig } from '../services/api';
+import { getAdsConfig } from '../services/firebase';
 import { AdBanner } from './AdBanner';
 
 export function ContentRenderer({ content }: { content: string }) {
