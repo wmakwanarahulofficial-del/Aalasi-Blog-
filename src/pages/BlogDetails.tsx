@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
-import { getBlogBySlug } from '../services/api';
+import { getBlogBySlug } from '../services/firebase';
 import { format } from 'date-fns';
 import { Share2, Heart, MessageSquare, ChevronLeft } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
