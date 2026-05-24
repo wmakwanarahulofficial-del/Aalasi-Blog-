@@ -35,7 +35,7 @@ import {
   saveAdsConfig, 
   getAdsStats, 
   getCategories 
-} from '../services/api';
+} from '../services/firebase';
 
 export function AdminAds() {
   // Top-level navigation tab
