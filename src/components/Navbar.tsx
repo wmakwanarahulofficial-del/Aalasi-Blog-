@@ -24,7 +24,7 @@ export function Navbar({ onOpenMenu }: { onOpenMenu: () => void }) {
   }, []);
 
   useEffect(() => {
-    getCategories().then(setCategories).catch(console.error);
+ //   getCategories().then(setCategories).catch(console.error);
   }, []);
 
   useEffect(() => {
