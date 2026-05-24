@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { MainLayout } from './layouts/MainLayout';
 import { HomePage } from './pages/HomePage';
@@ -13,8 +13,8 @@ import { AboutPage, ContactPage } from './pages/StaticPages';
 import { ProtectedRoute } from './components/ProtectedRoute';
 
 export default function App() {
-  useEffect(() => {
-    fetch('/api/track-view', { method: 'POST' });
+ // useEffect(() => {
+   // fetch('/api/track-view', { method: 'POST' });
   }, []);
 
   return (
