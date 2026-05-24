@@ -3,7 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { Navbar } from '../components/Navbar';
 import { Sidebar } from '../components/Sidebar';
 import { Footer } from '../components/Footer';
-import { getAdsConfig, trackAdEvent } from '../services/api';
+import { getAdsConfig, trackAdEvent } from '../services/firebase';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Sparkles, MessageCircle, ArrowUpRight } from 'lucide-react';
 
