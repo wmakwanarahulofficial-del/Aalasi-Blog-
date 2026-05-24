@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Settings, Save, Globe, Eye, MessageSquare, Mail, Share2, CircleSlash, Youtube, Facebook, Twitter, Camera, Loader2 } from 'lucide-react';
-import { getAdminProfile, updateAdminProfile, getSiteConfig, updateSiteConfig } from '../services/api';
+import { getAdminProfile, updateAdminProfile, getSiteConfig, updateSiteConfig } from '../services/firebase';
 
 interface AdminConfigProps {
   onSave?: () => void;
