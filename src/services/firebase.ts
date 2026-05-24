@@ -7,7 +7,7 @@ import {
   getDocs
 } from "firebase/firestore";
 
-import { auth, db } from "../firebase";
+import { auth, db } from "../firebase.ts";
 
 export async function login(email: string, password: string) {
   const userCredential = await signInWithEmailAndPassword(
