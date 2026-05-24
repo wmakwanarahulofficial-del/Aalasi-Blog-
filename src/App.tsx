@@ -1,5 +1,19 @@
+
+export default function App() {
+  return (
+    <div style={{padding: "40px"}}>
+      <h1>Aalasi Blog Working ✅</h1>
+    </div>
+  )
+}
+
+
+
+
+
+
 // import { useEffect } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+/*import { Routes, Route, Navigate } from 'react-router-dom';
 import { MainLayout } from './layouts/MainLayout';
 import { HomePage } from './pages/HomePage';
 import { BlogDetails } from './pages/BlogDetails';
