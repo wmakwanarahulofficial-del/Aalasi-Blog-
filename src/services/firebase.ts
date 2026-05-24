@@ -34,18 +34,6 @@ export const getBlogs = async () => {
   return [];
 };
 
-export const trackAdEvent = async () => {
-  return true;
-};
-
-export const getCategories = async () => {
-  return [];
-};
-
-export const getBlogs = async () => {
-  return [];
-};
-
 export const getBlogBySlug = async () => {
   return null;
 };
@@ -56,9 +44,4 @@ export const getCategories = async () => {
 
 export const trackAdEvent = async () => {
   return true;
-};
-
-
-export const getBlogBySlug = async () => {
-  return null;
 };
