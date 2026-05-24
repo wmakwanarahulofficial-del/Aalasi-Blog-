@@ -41,3 +41,32 @@ export const trackAdEvent = async () => {
 export const getCategories = async () => {
   return [];
 };
+
+export const getAdsConfig = async () => {
+  return null;
+};
+
+export const getAds = async () => {
+  return [];
+};
+
+export const getBlogs = async () => {
+  return [];
+};
+
+export const getBlogBySlug = async () => {
+  return null;
+};
+
+export const getCategories = async () => {
+  return [];
+};
+
+export const trackAdEvent = async () => {
+  return true;
+};
+
+
+export const getBlogBySlug = async () => {
+  return null;
+};
