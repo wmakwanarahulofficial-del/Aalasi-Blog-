@@ -25,13 +25,13 @@ export function MainLayout() {
     } else {
       document.body.style.overflow = '';
     }
-    return () => {
+  /*  return () => {
       document.body.style.overflow = '';
     };
   }, [sidebarOpen]);
 
   // 1. Fetch Ads & Popunder Configurations
-  /*useEffect(() => {
+  useEffect(() => {
     getAdsConfig()
       .then((data) => {
         setConfig(data);
