@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Send, Youtube, Facebook, Twitter, Instagram } from 'lucide-react';
-import { getSiteConfig } from '../services/api';
+import { getSiteConfig } from '../services/firebase';
 
 export function Footer() {
   const [cfg, setCfg] = useState({
