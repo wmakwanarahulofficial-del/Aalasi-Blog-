@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useLocation } from 'react-router-dom';
-import { getBlogs } from '../services/api';
+import { getBlogs } from '../services/firebase';
 import { formatDistanceToNow } from 'date-fns';
 import { AdBanner } from '../components/AdBanner';
 
