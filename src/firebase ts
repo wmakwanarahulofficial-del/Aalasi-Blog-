@@ -9,7 +9,7 @@ const firebaseConfig = {
   projectId: "aalasi-bloge",
   storageBucket: "aalasi-bloge.firebasestorage.app",
   messagingSenderId: "482698844148",
-  appId: "1:482698844148:web:d0215efa93529c86b74ba1"
+  appId: "1:482698844148:web:f459e225bdce12bdb74ba1"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -19,10 +19,6 @@ export const auth = getAuth(app);
 export const storage = getStorage(app);
 
 export default app;
-
-
-
-
 
 
 
