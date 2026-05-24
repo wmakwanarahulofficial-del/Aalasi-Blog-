@@ -34,7 +34,7 @@ export function MainLayout() {
   /*useEffect(() => {
     getAdsConfig()
       .then((data) => {
-        setConfig(data);*/
+        setConfig(data);
         
         // Match social bar visible conditions
         if (data?.adsterra?.enabled && data?.adsterra?.socialBarCode) {
@@ -47,7 +47,7 @@ export function MainLayout() {
         }
       })
       .catch((err) => console.error("MainLayout: Failed to load ads configurations", err));
-  }, []);
+  }, []);*/
 
   // 2. Automated Popunder Interceptor with frequency checks
   useEffect(() => {
