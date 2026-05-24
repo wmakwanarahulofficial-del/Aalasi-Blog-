@@ -22,3 +22,22 @@ export default app;
 
 
 
+export const getAdsConfig = async () => {
+  return null;
+};
+
+export const getAds = async () => {
+  return [];
+};
+
+export const getBlogs = async () => {
+  return [];
+};
+
+export const trackAdEvent = async () => {
+  return true;
+};
+
+export const getCategories = async () => {
+  return [];
+};
