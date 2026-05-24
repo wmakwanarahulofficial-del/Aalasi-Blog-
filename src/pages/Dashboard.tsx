@@ -30,7 +30,7 @@ import {
   deleteBlog,
   getAdminProfile,
   getAnalyticsOverview
-} from '../services/api';
+} from '../services/firebase';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 
 import { 
