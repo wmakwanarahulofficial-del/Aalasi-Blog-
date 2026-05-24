@@ -1,32 +1,24 @@
-import {
-  signInWithEmailAndPassword
-} from "firebase/auth";
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
+import { getStorage } from "firebase/storage";
 
-import {
-  collection,
-  getDocs
-} from "firebase/firestore";
+const firebaseConfig = {
+  apiKey: "AIzaSyBsoMdtPkUjve7sQiWaeKurtgYsfh8S0rg",
+  authDomain: "aalasi-bloge.firebaseapp.com",
+  projectId: "aalasi-bloge",
+  storageBucket: "aalasi-bloge.firebasestorage.app",
+  messagingSenderId: "482698844148",
+  appId: "1:482698844148:web:f459e225bdce12bdb74ba1"
+};
 
-import { auth, db } from "../firebase";
+const app = initializeApp(firebaseConfig);
 
-export async function login(email: string, password: string) {
-  const userCredential = await signInWithEmailAndPassword(
-    auth,
-    email,
-    password
-  );
+export const db = getFirestore(app);
+export const auth = getAuth(app);
+export const storage = getStorage(app);
 
-  return {
-    token: await userCredential.user.getIdToken(),
-    user: userCredential.user
-  };
-}
+export default app;
 
-export async function getCategories() {
-  const snapshot = await getDocs(collection(db, "categories"));
 
-  return snapshot.docs.map(doc => ({
-    id: doc.id,
-    ...doc.data()
-  }));
-}
+
