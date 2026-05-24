@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Search, Menu, ChevronDown, TrendingUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { getCategories } from '../services/api';
+import { getCategories } from '../services/firebase';
 
 export function Navbar({ onOpenMenu }: { onOpenMenu: () => void }) {
   const { t } = useTranslation();
