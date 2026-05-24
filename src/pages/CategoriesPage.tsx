@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { getCategories } from '../services/api';
+import { getCategories } from '../services/firebase';
 import * as Icons from 'lucide-react';
 import { AdBanner } from '../components/AdBanner';
 
