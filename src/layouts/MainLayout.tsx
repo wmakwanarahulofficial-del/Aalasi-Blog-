@@ -31,10 +31,10 @@ export function MainLayout() {
   }, [sidebarOpen]);
 
   // 1. Fetch Ads & Popunder Configurations
-  useEffect(() => {
-   // getAdsConfig()
+  /*useEffect(() => {
+    getAdsConfig()
       .then((data) => {
-        setConfig(data);
+        setConfig(data);*/
         
         // Match social bar visible conditions
         if (data?.adsterra?.enabled && data?.adsterra?.socialBarCode) {
