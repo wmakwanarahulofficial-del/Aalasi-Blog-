@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Send, Youtube, Facebook, Twitter, Instagram } from 'lucide-react';
-import { getSiteConfig } from '../services/firebase';
+// import { getSiteConfig } from '../services/firebase';
 
 export function Footer() {
   const [cfg, setCfg] = useState({
@@ -18,7 +18,7 @@ export function Footer() {
   });
 
   useEffect(() => {
-    getSiteConfig()
+ //   getSiteConfig()
       .then((data) => {
         if (data) {
           setCfg((prev) => ({
