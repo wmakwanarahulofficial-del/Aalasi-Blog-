@@ -10,7 +10,7 @@ import {
   ListBlock 
 } from './ContentBlockEditor';
 import { getAdsConfig } from '../services/firebase';
-import { AdBanner } from './AdBanner';
+import AdBanner from './AdBanner';
 
 export function ContentRenderer({ content }: { content: string }) {
   const [config, setConfig] = React.useState<any>(null);
