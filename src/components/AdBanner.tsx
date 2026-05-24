@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getAds, getAdsConfig, trackAdEvent } from '../services/api';
+import { getAds, getAdsConfig, trackAdEvent } from '../services/firebase';
 import { motion } from 'motion/react';
 import { Monitor, ExternalLink, ShieldCheck } from 'lucide-react';
 
