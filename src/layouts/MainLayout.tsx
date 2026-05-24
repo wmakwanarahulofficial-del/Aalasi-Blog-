@@ -87,7 +87,7 @@ export function MainLayout() {
     }, (config.popunder.delaySeconds || 5) * 1000);
 
     return () => clearTimeout(delayTimer);
-  }, [config]);*/
+  }, [config]);
 
   // 3. Global Direct Link Button Event Handlers matching customized trigger selectors
   useEffect(() => {
@@ -115,7 +115,7 @@ export function MainLayout() {
 
     document.addEventListener('click', interceptButtonClicks, true);
     return () => document.removeEventListener('click', interceptButtonClicks, true);
-  }, [config]);
+  }, [config]);*/
 
   return (
     <div className="flex flex-col min-h-screen font-sans bg-gray-50 dark:bg-slate-950 transition-colors duration-500">
