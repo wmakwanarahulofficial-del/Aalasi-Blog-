@@ -34,7 +34,7 @@ export default function App() {
   return (
     <Routes>
       {/* Public area with MainLayout */}
-      <Route path="/" element={<MainLayout />}>
+  /*    <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
         <Route path="latest" element={<BlogListPage type="latest" />} />
         <Route path="trending" element={<BlogListPage type="trending" />} />
@@ -49,10 +49,10 @@ export default function App() {
       </Route>
 
       {/* Admin Panel Hidden Route */}
-      <Route path="/aalsi-admin-login" element={<AuthPage />} />
+ /*     <Route path="/aalsi-admin-login" element={<AuthPage />} />
 
       {/* Protected Admin Routes */}
-      <Route path="/admin" element={<ProtectedRoute />}>
+/*      <Route path="/admin" element={<ProtectedRoute />}>
         <Route index element={<Navigate to="dashboard" replace />} />
         <Route path=":tab" element={<Dashboard />} />
       </Route>
