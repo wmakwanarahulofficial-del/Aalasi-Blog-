@@ -25,12 +25,12 @@ export function MainLayout() {
     } else {
       document.body.style.overflow = '';
     }
-  /*  return () => {
+   return () => {
       document.body.style.overflow = '';
     };
   }, [sidebarOpen]);
 
-  // 1. Fetch Ads & Popunder Configurations
+/*  // 1. Fetch Ads & Popunder Configurations
   useEffect(() => {
     getAdsConfig()
       .then((data) => {
@@ -47,7 +47,7 @@ export function MainLayout() {
         }
       })
       .catch((err) => console.error("MainLayout: Failed to load ads configurations", err));
-  }, []);*/
+  }, []);
 
   // 2. Automated Popunder Interceptor with frequency checks
   useEffect(() => {
