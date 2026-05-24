@@ -42,14 +42,6 @@ export const getCategories = async () => {
   return [];
 };
 
-export const getAdsConfig = async () => {
-  return null;
-};
-
-export const getAds = async () => {
-  return [];
-};
-
 export const getBlogs = async () => {
   return [];
 };
