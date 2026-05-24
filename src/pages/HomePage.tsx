@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { getBlogs, getCategories } from '../services/api';
+import { getBlogs, getCategories } from '../services/firebase';
 import { formatDistanceToNow } from 'date-fns';
 import { AdBanner } from '../components/AdBanner';
 
