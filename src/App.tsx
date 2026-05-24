@@ -1,11 +1,5 @@
 
-export default function App() {
-  return (
-    <div style={{padding: "40px"}}>
-      <h1>Aalasi Blog Working ✅</h1>
-    </div>
-  )
-}
+
 
 
 
@@ -13,7 +7,7 @@ export default function App() {
 
 
 // import { useEffect } from 'react';
-/*import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { MainLayout } from './layouts/MainLayout';
 import { HomePage } from './pages/HomePage';
 import { BlogDetails } from './pages/BlogDetails';
@@ -34,7 +28,7 @@ export default function App() {
   return (
     <Routes>
       {/* Public area with MainLayout */}
-  /*    <Route path="/" element={<MainLayout />}>
+      <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
         <Route path="latest" element={<BlogListPage type="latest" />} />
         <Route path="trending" element={<BlogListPage type="trending" />} />
@@ -49,10 +43,10 @@ export default function App() {
       </Route>
 
       {/* Admin Panel Hidden Route */}
- /*     <Route path="/aalsi-admin-login" element={<AuthPage />} />
+    <Route path="/aalsi-admin-login" element={<AuthPage />} />
 
       {/* Protected Admin Routes */}
-/*      <Route path="/admin" element={<ProtectedRoute />}>
+      <Route path="/admin" element={<ProtectedRoute />}>
         <Route index element={<Navigate to="dashboard" replace />} />
         <Route path=":tab" element={<Dashboard />} />
       </Route>
