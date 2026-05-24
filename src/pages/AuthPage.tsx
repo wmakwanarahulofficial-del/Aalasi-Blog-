@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { Lock, ArrowRight, ShieldCheck } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { login } from '../services/api';
+import { login } from '../services/firebase';
 
 export function AuthPage() {
   const [email, setEmail] = useState('');
