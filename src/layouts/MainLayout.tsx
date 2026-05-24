@@ -70,7 +70,8 @@ export function MainLayout() {
           window.open(config.popunder.code, '_blank');
           localStorage.setItem('aalasi_last_popunder', now.toString());
           trackAdEvent('popunder-widget', 'impression', 'popunder-trigger').catch(console.error);
-        } catch (err) {
+        } 
+        /*catch (err) {
           console.error("Popup blocked or failed to redirect", err);
         }
 
@@ -86,7 +87,7 @@ export function MainLayout() {
     }, (config.popunder.delaySeconds || 5) * 1000);
 
     return () => clearTimeout(delayTimer);
-  }, [config]);
+  }, [config]);*/
 
   // 3. Global Direct Link Button Event Handlers matching customized trigger selectors
   useEffect(() => {
