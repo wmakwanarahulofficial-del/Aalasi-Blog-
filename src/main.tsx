@@ -1,20 +1,16 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
-import App from './App.tsx';
-import './index.css';
-import { ThemeProvider } from './context/ThemeContext';
-import './i18n/config';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <ThemeProvider>
-      <HelmetProvider>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </HelmetProvider>
-    </ThemeProvider>
-  </StrictMode>,
+function App() {
+  return (
+    <div style={{ padding: "40px", fontSize: "40px" }}>
+      AALASI BLOG WORKING ✅
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
